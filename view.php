@@ -1,6 +1,6 @@
 <?php
     foreach ($data as $key => $category) {
-        foreach (array_reverse($category['tracks']) as $key2 => $track) {
+        foreach ($category['tracks'] as $key2 => $track) {
             ?>
             <h4><?php echo $track['name']?></h4>
             <table class="rfactor-hotlaps-table">
