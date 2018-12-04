@@ -51,6 +51,10 @@ function get_data_json(){
     header('Content-Type: application/json');
 
     $path = plugin_dir_path( __FILE__ ).'hotlapsData.xml';
+    if(isset($_GET['src'])){
+        $path = $_GET['src'];
+    }
+    
     $json = get_data($path);
 
     $jsonString = json_encode($json);

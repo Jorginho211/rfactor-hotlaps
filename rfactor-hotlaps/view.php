@@ -1,0 +1,1 @@
+<div id='wp-rfactor-hotlaps' data-src='<?php echo $attributes['src'] ?>'></div>
